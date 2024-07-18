@@ -195,3 +195,40 @@ footer {
 .about-glass p {
     margin: 0;
 }
+
+.projects-glass{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: min(300px);
+}
+
+.wrapper{
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    text-align: center;
+}
+
+.card{
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 25px 25px;
+    flex-shrink: 0;
+    width: min(300px, 99%);
+    border-radius: 14px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    text-align: center;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 19px;
+}
